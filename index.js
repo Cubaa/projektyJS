@@ -1,4 +1,4 @@
-const canvas = document.getElementById('tutorial');
+const canvas = document.getElementById('snow');
 const ctx = canvas.getContext('2d');
 
 canvas.width = window.innerWidth
