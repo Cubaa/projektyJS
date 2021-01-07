@@ -1,7 +1,6 @@
 var canvas = document.getElementById('tutorial');
 var ctx = canvas.getContext('2d');
-/*const firstDiv = document.querySelector('.first')
-const scndDiv = document.querySelector('.scnd')*/
+
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 const snowballArray = []
@@ -73,7 +72,7 @@ snowballArray.push({
     
 }
 function snowballMove(){
-    //requestAnimationFrame(snowballMove)
+   
     ctx.clearRect(0, 0, innerWidth, innerHeight);
    
     for (let j = 0; j < mountainCords.length; j++) {
@@ -102,7 +101,7 @@ function snowballMove(){
         let radii2 = snowballArray[i].r + mountainCords[1].r
         let distance1 = Math.sqrt((distanceX1 * distanceX1) + (distanceY1 * distanceY1))
         let distance2 = Math.sqrt((distanceX2 * distanceX2) + (distanceY2 * distanceY2))
-       // console.log(Math.round(snowballArray[0].y), (window.innerHeight - (firstDiv.clientHeight/2)))
+       
        console.log(whitlyCounter1, whitlyCounter2)
         
             if(whitlyCounter1>=25 && whitlyCounter1<=45)
@@ -179,7 +178,6 @@ function snowballMove(){
           
         
       
-        //console.log(distanceX, distanceY,radii)
         if(distance1 <= radii1)
         {
             console.log("dotyk1")
@@ -197,13 +195,7 @@ function snowballMove(){
            
         }
       
-        /*else if(snowballArray[i].x>window.innerWidth)
-        {
-            console.log("ozaseorkiX")
       
-            snowballArray[i].x-=snowballArray[i].directionX
-            snowballArray[i].y+=snowballArray[i].directionY
-        }*/
       
        ctx.beginPath()
         snowballArray[i].x+=snowballArray[i].directionX
@@ -220,6 +212,6 @@ function snowballMove(){
    
 }
 setInterval(snowballMove, 30)
-//snowballMove()
+
 
 
