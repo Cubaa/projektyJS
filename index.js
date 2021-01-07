@@ -1,5 +1,5 @@
-var canvas = document.getElementById('tutorial');
-var ctx = canvas.getContext('2d');
+const canvas = document.getElementById('tutorial');
+const ctx = canvas.getContext('2d');
 
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
@@ -102,13 +102,12 @@ function snowballMove(){
         let distance1 = Math.sqrt((distanceX1 * distanceX1) + (distanceY1 * distanceY1))
         let distance2 = Math.sqrt((distanceX2 * distanceX2) + (distanceY2 * distanceY2))
        
-       console.log(whitlyCounter1, whitlyCounter2)
+       
         
             if(whitlyCounter1>=25 && whitlyCounter1<=45)
             {
                 ctx.beginPath()
                 ctx.arc(mountainCordsOverlay[0].x,mountainCordsOverlay[0].y,mountainCordsOverlay[0].r,0,Math.PI,true); 
-            console.log("74")
                 ctx.fillStyle = `rgba(255, 255, 255, 0.1)`
                 ctx.fill()
             }
@@ -116,7 +115,6 @@ function snowballMove(){
             if(whitlyCounter2>=25 && whitlyCounter2<=45)
             {
                 ctx.beginPath()
-               
                 ctx.arc(mountainCordsOverlay[1].x,mountainCordsOverlay[1].y,mountainCordsOverlay[1].r,0,Math.PI,true); 
                 ctx.fillStyle = `rgba(255, 255, 255, 0.1)`
                 ctx.fill()
@@ -133,7 +131,6 @@ function snowballMove(){
             if(whitlyCounter2>45 &&  whitlyCounter2<=75)
             {
                 ctx.beginPath()
-              
                 ctx.arc(mountainCordsOverlay[1].x,mountainCordsOverlay[1].y,mountainCordsOverlay[1].r,0,Math.PI,true); 
                 ctx.fillStyle = "rgba(255, 255, 255, 0.3)"
                 ctx.fill()
@@ -143,7 +140,6 @@ function snowballMove(){
             {
                 ctx.beginPath()
                 ctx.arc(mountainCordsOverlay[0].x,mountainCordsOverlay[0].y,mountainCordsOverlay[0].r,0,Math.PI,true); 
-                console.log(">75")
                 ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
                 ctx.fill()
                
@@ -152,7 +148,6 @@ function snowballMove(){
             {
                 ctx.beginPath()
                 ctx.arc(mountainCordsOverlay[1].x,mountainCordsOverlay[1].y,mountainCordsOverlay[1].r,0,Math.PI,true); 
-                console.log(">75")
                 ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
                 ctx.fill()
             }
@@ -180,7 +175,7 @@ function snowballMove(){
       
         if(distance1 <= radii1)
         {
-            console.log("dotyk1")
+         
             whitlyCounter1++
             snowballArray[i].y=-5
          
@@ -188,7 +183,7 @@ function snowballMove(){
         }
         else if(distance2 <= radii2)
         {
-            console.log("dotyk2")
+          
             whitlyCounter2++
             snowballArray[i].y=-5
          
