@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.drumkit{
+    margin: 0 auto;
+    width: 50%;
+    
+}
+#Crash-Cymbol, #Hi-Hat-Top, #Hi-Hat-Bottom, #Kick, #Snare-Drum, #Floor-Tom-Drum, #Tom-Left-Drum, #Tom-Right-Drum{
+   
+   transform-origin: 50% 50%;
+  
+
+   
+}
+.moveSinglePlate{
+    animation: moveSinglePlate .2s ease;
+}
+.moveDoublePlate{
+    animation: moveDoublePlate .2s ease;;
+}
+.moveKickDrum{
+    animation: moveKickDrum .2s ease;
+}
+.moveSnareDrum{
+    animation: moveSnareDrum .2s ease;
+}
+.moveFloorTomDrum{
+    animation: moveFloorTomDrum .2s ease;
+}
+.moveLeftTomDrum{
+    animation: moveLeftTomDrum .2s ease;
+}
+.moveRightTomDrum{
+    animation: moveRightTomDrum .2s ease;
+}
+
+
+@keyframes moveSinglePlate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+
+    }
+    
+        0%{
+            transform: rotate(-10deg);
+        }
+   
+}
+@keyframes moveDoublePlate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1deg);
+
+    }
+    
+    0%{
+        transform: rotate(-1deg);
+    }
+   
+}
+@keyframes moveKickDrum{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+
+    }
+    
+    0%{
+        transform: scale(1);
+    }
+   
+}
+@keyframes moveSnareDrum{
+    0%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(1.04);
+
+    }
+    
+    0%{
+        transform: scaleY(1);
+    }
+   
+}
+@keyframes moveFloorTomDrum{
+    0%{
+        transform: scaleY(1) translateY(0%) scaleX(1);
+    }
+    100%{
+        transform: scaleY(1.09) translateY(-2%) scaleX(1.09);
+
+    }
+    
+    0%{
+        transform: scaleY(1) translateY(0%) scaleX(1);
+    }
+   
+}
+@keyframes moveLeftTomDrum{
+    0%{
+        transform: scaleY(1) translateY(0%) scaleX(1);
+    }
+    100%{
+        transform: scaleY(1.01) translateY(-1%) scaleX(1.01);
+
+    }
+    
+    0%{
+        transform: scaleY(1) translateY(0%) scaleX(1);
+    }
+   
+}
+@keyframes moveRightTomDrum{
+    0%{
+        transform: scaleY(1) translateY(0%) scaleX(1);
+    }
+    100%{
+        transform: scaleY(1.01) translateY(-1%) scaleX(1.01);
+
+    }
+    
+    0%{
+        transform: scaleY(1) translateY(0%) scaleX(1);
+    }
+   
+}
+.sounds{
+    display: none;
+}
