@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    position: relative;
+
+}
+canvas{
+    display: block;
+    background-color: rgb(57, 197, 57);
+    position: absolute;
+    
+ 
+}
+div.scoreAndTime{
+    position: absolute;
+    width: 5%;
+    height: 3vh;
+    top: 5%;
+    left: 95%;
+    z-index: 9999;
+}
+div.scoreAndTime span{
+    font-size: 21px;
+}
+div.scoreAndTime span:nth-of-type(1){
+    font-size: 21px;
+    padding-right: 9px;
+}
